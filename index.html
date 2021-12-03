@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <title>Responsive Navigation Bar</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+   <nav>
+      <ul>
+         <li class="logo">WorldRemit Inc.</li>
+         <label for="Country">Choose a country:</label>
+         <li class="items"><a href="#">Send From :  
+            <select name="cars" id="cars">
+            <option value="United States">United States</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="France">France</option>
+            <option value="France">Italy</option>
+        
+        </select> |</a></li><br>
+        <select name="Language" id="Language">
+            <option value="volvo">English</option>
+            <option value="saab">Francais</option>
+            <option value="mercedes">Espanol</option>
+            <option value="mercedes">Deutsch</option>
+          </select>
+          
+         <li class="items"><a href="https://www.worldremit.com/en/live-updates">Live Updates</a></li>
+         <li class="items"><a href="https://www.worldremit.com/en/faq">Help</a></li>
+         <li class="items"><a href="#"><Help</a></li>
+         <li class="items"><a href="https://www.worldremit.com/en/account/login">Login</a></li>
+         <li class="items"><a href="https://www.worldremit.com/en/account/signup">Sign up</a></li>
+         <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
+      </ul>
+   </nav>
+   <body>
+    <h2>WorldRemit INC.</h2><h3>Safest Money Transfer APP # Moneying with absolute trust</h3>
+
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="text" value="1">
+        </div>
+        <div class="drop-list">
+          <div class="from">
+            <p>From</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
+            </div>
+          </div>
+          <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+          <div class="to">
+            <p>To</p>
+            <div class="select-box">
+              <img src="https://flagcdn.com/48x36/np.png" alt="flag">
+              <select> <!-- Options tag are inserted from JavaScript --> </select>
+            </div>
+          </div>
+        </div>
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+    <script src="js/country-list.js"></script>
+    <script src="js/script.js"></script>
+ 
+    
+    <img src="pic.jpg" alt="photo of couples">  
+ 
+
+   <script>
+      $(document).ready(function(){
+        $('.btn').click(function(){
+          $('.items').toggleClass("show");
+          $('ul li').toggleClass("hide");
+        });
+      });
+   </script>
+</body>
+</html>
